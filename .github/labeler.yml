@@ -18,3 +18,8 @@ labels:
   - label: "Status: waiting for review"
     matcher:
       baseBranch: ".*"
+      labels:
+  # Give authors the ability to set the Status: waiting for review status by writing /ready in a comment
+  - label: "Status: waiting for review"
+    matcher:
+      comment: "/ready"
