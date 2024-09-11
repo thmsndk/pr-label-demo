@@ -4,5 +4,12 @@ labels:
   - label: 'Scope: meta'
     sync: true
     matcher:
-      # This is shorthand for any: [".github/**"]
-      files: ['.github/**']
+      files: [".github/**]
+  - label: 'Scope: Game client'
+    sync: true
+    matcher:
+      files: ["js/**"]
+  - label: 'Scope: game server'
+    sync: true
+    matcher:
+      files: ["node/**"]
