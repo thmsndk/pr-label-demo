@@ -1,0 +1,8 @@
+version: v1
+
+labels:
+  - label: 'Scope: meta'
+    sync: true
+    matcher:
+      # This is shorthand for any: [".github/**"]
+      files: ['.github/**']
