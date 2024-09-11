@@ -8,8 +8,8 @@ labels:
   - label: 'Scope: Game client'
     sync: true
     matcher:
-      files: ["js/**]
+      files: ["js/**"]
   - label: 'Scope: game server'
     sync: true
     matcher:
-      files: ["node/**]
+      files: ["node/**"]
