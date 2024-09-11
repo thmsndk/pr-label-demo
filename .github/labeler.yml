@@ -4,7 +4,7 @@ labels:
   - label: 'Scope: meta'
     sync: true
     matcher:
-      files: [".github/**]
+      files: [".github/**"]
   - label: 'Scope: Game client'
     sync: true
     matcher:
