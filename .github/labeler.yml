@@ -1,6 +1,7 @@
 version: v1
 
 labels:
+  # label Scope:
   - label: 'Scope: meta'
     sync: true
     matcher:
@@ -13,3 +14,7 @@ labels:
     sync: true
     matcher:
       files: ["node/**"]
+  # Make new PRs get the waiting for review label
+  - label: 'Status: waiting for review'
+    matcher:
+      baseBranch: '.*'
