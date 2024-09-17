@@ -1,0 +1,20 @@
+version: v1
+
+labels:
+  # label Scope:
+  - label: "Scope: meta"
+    sync: true
+    matcher:
+      files: ".github/**"
+  - label: "Scope: Game client"
+    sync: true
+    matcher:
+      files: "js/**"
+  - label: "Scope: game server"
+    sync: true
+    matcher:
+      files: "node/**"
+  # Make new PRs get the waiting for review label
+  - label: "Status: waiting for review"
+    matcher:
+      baseBranch: ".*"
