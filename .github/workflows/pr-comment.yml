@@ -23,7 +23,7 @@ jobs:
     steps:
       # follows semantic versioning. Lock to different version: v1, v1.5, v1.5.0 or use a commit hash.
       - uses: fuxingloh/multi-labeler@v4 # v4
-    with:
-      # github-token: ${{secrets.GITHUB_TOKEN}} # optional, default to '${{ github.token }}'
-      config-path: .github/pr-comment.yml # optional, default to '.github/labeler.yml'
-      # config-repo: my-org/my-repo # optional, default to '${{ github.repository }}'
+        with:
+          # github-token: ${{secrets.GITHUB_TOKEN}} # optional, default to '${{ github.token }}'
+          config-path: .github/pr-comment.yml # optional, default to '.github/labeler.yml'
+          # config-repo: my-org/my-repo # optional, default to '${{ github.repository }}'
