@@ -3,6 +3,7 @@ on:
     # To pickup comment body in pr or issue and generate a label.
     # Imagine someone comment 'Me too, I get TimeoutException from ...' in comment body.
     # Generate a 'bug/timeout' label for better triaging!
+    # https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#issue_comment
     types: [created]
 
 permissions:
@@ -14,8 +15,9 @@ permissions:
   checks: write # to generate status
 
 jobs:
-  labeler:
+  pr_commented:
     name: Labeler PR comment
+    # This job only runs for pull request comments
     if: ${{ github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     steps:
