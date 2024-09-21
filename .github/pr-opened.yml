@@ -44,11 +44,13 @@ labels:
     matcher:
       # e.g. '- [x] :bug:'
       body: "(\\n|.)*- \\[x\\] :bug:(\\n|.)*"
+      branch: "^bug/.*"
   - label: "Type: feature"
     sync: true
     matcher:
       # e.g. '- [x] :sparkles:'
       body: "(\\n|.)*- \\[x\\] :sparkles:(\\n|.)*"
+      branch: "^feature/.*"
   - label: "Type: enhancement"
     sync: true
     matcher:
