@@ -27,12 +27,12 @@ labels:
     sync: true
     matcher:
       # packages for js, requirements for python
-      files: ["package.json", "requirements.txt"]
+      files: ["**/package.json", "**/requirements.txt"]
   - label: "Scope: Map Editor"
     sync: true
     matcher:
       # utility/htmls/map_editor_info.html,map_editor.html,map_editor.js
-      files: "map_editor*"
+      files: "**/*map_editor*"
   - label: "Scope: UI/UX"
     sync: true
     matcher:
