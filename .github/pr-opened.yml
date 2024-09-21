@@ -33,6 +33,11 @@ labels:
     matcher:
       # utility/htmls/map_editor_info.html,map_editor.html,map_editor.js
       files: "map_editor*"
+  - label: "Scope: UI/UX"
+    sync: true
+    matcher:
+      # e.g. '- [x] :lipstick:'
+      body: "(\\n|.)*- \\[x\\] :lipstick:(\\n|.)*"
   # label Type:
   - label: "Type: bug"
     sync: true
