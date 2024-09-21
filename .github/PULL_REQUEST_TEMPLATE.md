@@ -13,27 +13,25 @@
      - 📝 Use descriptive commit messages.
      - 📗 Update any related documentation and include any relevant screenshots.
 
-     NOTE: Pull Requests from forked repositories will need to be reviewed by
-     a Forem Team member before any CI builds will run. Once your PR is approved
-     with a `/ci` reply to the PR, it will be allowed to run subsequent builds without
-     manual approval.
-
-     TODO: write something about `/ready`
-     NOTE: If the PR gets "Waiting for author" label you can give it back with a `/ready` reply to the PR this will add the "Waiting for review" label
+     NOTE: If the PR gets "Status: waiting for author" label you can give it back with once done with a `/ready` reply to the PR this will add the "Status: waiting for review" label
 -->
 
 ## What type of PR is this? (check all applicable)
 
+- [ ] :sparkles: Feature (Type: feature)
+- [ ] :bug: Bug Fix (Type: bug)
+- [ ] :hammer_and_wrench: Enhancement (Type: enhancement)
 - [ ] :recycle: Refactor
-- [ ] :sparkles: Feature
-- [ ] :bug: Bug Fix
-- [ ] :zap: Optimization
-- [ ] :memo: Documentation Update
-
+- [ ] :zap: Optimization (Type: performance)
+- [ ] :memo: Documentation Update (Type: docs)
+- [ ] :boom: Breaking changes
+- [ ] :pencil2: Fix Typos
+- [ ] :lipstick: Scope: UI/UX
 
 ## Description
+
 <!--
-Describe the PR here
+Describe the contents of the PR here
 -->
 
 ## Related Tickets & Documents
@@ -52,10 +50,6 @@ automatically close the issue.
 
 ## [optional] :camera_flash: Screenshots
 
-If you made UI changes, what are the before an afters?
+If you made UI changes, show us how it looked before the change, and after the change
 
 ## [optional] :rocket: Are there any post deployment tasks we need to perform?
-
-## [optional] What gif best describes this PR or how it makes you feel?
-
-![alt_text](gif_link)
